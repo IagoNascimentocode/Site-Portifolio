@@ -51,5 +51,31 @@
     top: -300px;
     right: 600px;
 }
+#tela{
+    background-color:blanchedalmond;
+}
+#title{
+    margin-left: 100px;
+    margin-top: 150px;
+}
+.bloco-corousel-item{
+    height: 400px;
+    width: 800px;
+}
+#meuCarroussel{
+    float: left;
+    left: 150px;
+    top: 50px;
 
-
+}
+#social{
+    float: right;
+    font-size: 30px;
+    margin-right: 100px;
+    margin-top: 70px;
+    text-decoration: none;
+    list-style: none;
+}
+.social-item{
+    margin-top: 25px;
+}
