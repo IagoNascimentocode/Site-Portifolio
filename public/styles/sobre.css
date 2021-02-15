@@ -1,0 +1,68 @@
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#img-sobre{
+    float: right;
+    position: relative;
+
+    animation-name: changeMove;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes changeMove{
+    0% {left:900px;}
+    100% {left:0px;}
+}
+#div-h1-olá{
+    overflow: hidden;
+    float: left;
+    position: relative;
+    top:120px;
+    left: 160px;
+}
+#div-h1-name{
+    overflow: hidden;
+    float: right;
+    position: relative;
+    top:165px;
+    right: 470px;
+    }
+@keyframes moveOlá{
+    0% {bottom:100px;}
+    100% {bottom:0px;}
+}
+#olá{
+    position: relative;
+    padding-left: 50px;
+    animation-name: moveOlá;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes moveName{
+    0% {bottom:200px;}
+    100% {bottom:0px;}
+}
+#name{
+    position: relative;
+    animation-name: moveName;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes descriptionMove{
+    0% {bottom:0px;}
+    100% {top:200px;}
+}
+#div-decription{
+    width: 500px;
+    text-align: center;
+    float: left;
+    top: 220px;
+    left: 60px;
+    
+    position: relative;
+    animation: descriptionMove;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+}

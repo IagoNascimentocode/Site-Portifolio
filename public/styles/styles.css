@@ -1,9 +1,6 @@
 body{
     margin: 0;
     padding: 0;
-
-    display: grid;
-    grid-template-rows: 0.5fr 2fr 0.5fr;
 }
 .header{
     display: flex;
@@ -30,7 +27,6 @@ body{
 }
 .flip{
     transform: rotateY(540deg);
-    
 }
 .logo{
     margin-left: 200px;
@@ -69,22 +65,60 @@ body{
     flex-direction: column;
     top: 0;
 }
+@keyframes moveTitle{
+    0%{top:500px;}
+    100%{top:100px;}
 
-#title{
+}
+#title-div{
     float: left;
-    margin-left: 50px;
-    margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+}
+#title-h1{
+    width: 300px;
+    height: 120px;
+    margin: 0;
+    padding: 0;
+    left: 50px;
+    top: 100px;
+    
+    position: relative;
+    animation-name: moveTitle;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+#title-p{
+    width: 300px;
+    height: 150px;
+    left: 50px;
+    top: 200px;
+    overflow: hidden;
+    
+    position: relative;
+    animation-name: moveTitle;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes moveCarroussel{
+    0%{left:1200px;}
+    100%{left:80px;}
 }
 #meuCarroussel{ 
     float: left;
     top: 50px;
     left: 50px;
-    
+
+    position: relative;
+    animation-name:moveCarroussel;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+        
 }
 .bloco-corousel-item{
     width: 1000px;
     height: 500px;
-
 }
 .span{
     position: relative;
@@ -105,16 +139,32 @@ body{
 #social{
     float: right;
     margin-top: 100px;
-    margin-right: 70px;
+    margin-right: 60px;
     font-size: 30px;
+    overflow: hidden;
+    
 }
 #list-social{
     text-decoration: none;
     list-style: none;
-
+}
+@keyframes moveSocialItem{
+    0%{right: 1200px;}
+    100%{right:0px;}
+    
 }
 .social-item{
     margin-top: 25px;
+    
+    position: relative;
+    animation-name: moveSocialItem;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    
+}
+i{
+    color: black;
 }
 .span{
     display: inline-block;
@@ -128,7 +178,6 @@ body{
     width: 98%;
     clear:both;
 }
-
 #line-footer{
     float: left;
     width: 100%;
@@ -141,14 +190,12 @@ body{
     margin-right: 30px;
     margin-top: 3px;
 }
-
 .quadrado-faq{
     float: left;
     width: 150px;
     height: 150px;
     margin-left: 50px;
     margin-top: 50px;
-    
 }
 #clientes{
     color: black;
@@ -160,3 +207,4 @@ body{
 #clientes:hover{
     font-weight: bold;
 }
+
