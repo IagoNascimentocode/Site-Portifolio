@@ -4,7 +4,7 @@ function navCollapseOn(){
     let btnOpen = document.getElementById("btn-navOpen")
     let btnClosed = document.getElementById("btn-navClosed")
 
-/*     layer.style.display = 'flex' */
+    layer.style.display = 'flex'
     carousel.style.display = 'none'
     btnOpen.classList.add('flip')
     btnClosed.classList.remove('flip')
