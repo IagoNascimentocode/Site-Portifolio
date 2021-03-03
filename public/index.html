@@ -1,149 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="./styles/styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>Document</title>
-    </head>
-    <body>
-        
-        <header>
 
-            <div class="header">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-                <div class="btnNav">
-                    <div id="btn-navOpen" class="btn-navOpen fas fa-bars" onclick="navCollapseOn()"></div>
-                    <div id="btn-navClosed" class=" flip btn-navClosed fas fa-times" onclick="navCollapseOff()"></div>
-                </div>
+    <title>Document</title>
+</head>
 
-                <div class="logo">Logo</div>
-                
-                <div class="divLink">
-                    <a class="linkHeader" href="">eng </a>
-                    <span class="linkHeader">|</span>
-                    <a class="linkHeader" href=""> pt</a>
-                    <a class="linkHeader mr-4" href="" >oi@wallaceFonseca.com</a>  
-                </div>
-                
+<body>
+
+    <header>
+
+        <div class="position-btn">
+            <div id="btn-navOpen" class="btn-navOpen fas fa-bars" onclick="navCollapseOn()"></div>
+            <div id="btn-navClosed" class=" flip btn-navClosed fas fa-times" onclick="navCollapseOff()"></div>
+        </div>
+
+
+        <div class="logo">Logo</div>
+
+        <div class="divLink">
+            <a class="linkHeader" href="">eng </a>
+            <span class="linkHeader">|</span>
+            <a class="linkHeader" href=""> pt</a>
+            <a class="linkHeader mr-4" href="">oi@wallaceFonseca.com</a>
+        </div>
+
+
+    </header>
+
+
+
+    <section>
+        <div id="title-div">
+            <div id="title-h1">
+                <h1>Freeland<br>
+                </h1>
+                <h1>
+                    Photographer
+                </h1>
             </div>
-
-        </header>
-            
-
-        
-        <section>
-            <div id="title-div">
-                <div id="title-h1">
-                    <h1>Freeland<br>
-                    </h1>
-                    <h1>
-                        Photographer
-                    </h1>
-                </div>
-                <div id="title-p">
-                    <p>Olá, eu sou wallace Fonseca!<br>
-                        Fotógrafo Comercial e de Viagens.</p>
-                </div>
+            <div id="title-p">
+                <p>Olá, eu sou wallace Fonseca!<br>
+                    Fotógrafo Comercial e de Viagens.
+                </p>
             </div>
+        </div>
 
-            <div id="container-carousel">
-                <div id="meuCarroussel" class="carousel slide" data-ride="carousel">
-                    
-                    <ul id="carousel-indicators" class="carousel-indicators">
-                        <li data-targert="#meuCarroussel" data-slide-to="0" class="active"></li>
-                        <li data-targert="#meuCarroussel" data-slide-to="1" ></li>
-                        <li data-targert="#meuCarroussel" data-slide-to="2" ></li>
-                    </ul>
-                    
-                    <div class="carousel-inner">
-                        
-                        <div class="carousel-item active">
-                            <div class="bg-info text-light d-flex justify-content-center alig-item-center bloco-corousel-item">
-                                Oferta 1
-                            </div>
+        <div id="container-carousel">
+            <div id="meuCarroussel" class="carousel slide" data-ride="carousel">
+
+                <ul id="carousel-indicators" class="carousel-indicators">
+                    <li data-targert="#meuCarroussel" data-slide-to="0" class="active"></li>
+                    <li data-targert="#meuCarroussel" data-slide-to="1"></li>
+                    <li data-targert="#meuCarroussel" data-slide-to="2"></li>
+                </ul>
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div
+                            class="bg-info text-light d-flex justify-content-center alig-item-center bloco-corousel-item">
+                            Oferta 1
                         </div>
-                        <div class="carousel-item">
-                            <div class="bg-warning text-light d-flex justify-content-center alig-item-center bloco-corousel-item">
-                                Oferta 2
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="bg-danger text-light d-flex justify-content-center alig-item-center bloco-corousel-item">
-                                Oferta 3
-                            </div>
-                        </div>
-                        
-                        <a class="carousel-control-prev" href="#meuCarroussel" data-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </a>
-                        
-                        <a class="carousel-control-next" href="#meuCarroussel" data-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </a>
                     </div>
-                </div>
-                    
-                <div id="social">
-                    <ul id="list-social">
-                        <li class="social-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li class="social-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                        <li class="social-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li class="social-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li class="social-item"><a href="#"><i class="fab fa-youtube"></i></a></li>
-                    </ul>
-                </div>
-
-                <div class="span">
-                    <span id="phone">+55 21 99730-0601</span>
-                    <span id="direitos">Todos os direitos reservados © 2021</span>
-                </div>                
-            </section>      
-            
-            
-            <footer>
-                
-                <div id="footer">
-                    <a id="clientes" href="#mapa" data-toggle="collapse">Clientes ></a>
-                    <div id="mapa" class="collapse">
-                        <div class="quadrado-faq bg-info">Imagem</div>
-                        <div class="quadrado-faq bg-dark">Imagem</div>
-                        <div class="quadrado-faq bg-success">Imagem</div>
-                        <div class="quadrado-faq bg-danger">Imagem</div>
+                    <div class="carousel-item">
+                        <div
+                            class="bg-warning text-light d-flex justify-content-center alig-item-center bloco-corousel-item">
+                            Oferta 2
+                        </div>
                     </div>
-                    
-                    <div id='line-footer' class="mt-3"></div>
-                    <a href="#" id="dev">Desenvolvedor: Iago Nascimento</a>
+                    <div class="carousel-item">
+                        <div
+                            class="bg-danger text-light d-flex justify-content-center alig-item-center bloco-corousel-item">
+                            Oferta 3
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#meuCarroussel" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+
+                    <a class="carousel-control-next" href="#meuCarroussel" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
                 </div>
-                
-            </footer>
-            <div id="layer">
-                <nav class="navbar">
-                    
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a href="./index.html"class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="./sobre.html"class="nav-link">Sobre</a></li>
-                        <li class="nav-item"><a href="#"class="nav-link">Portifólio</a></li>
-                        <li class="nav-item"><a href="#"class="nav-link">Serviços</a></li>
-                        <li class="nav-item"><a href="#"class="nav-link">Viagens</a></li>
-                        <li class="nav-item"><a href="#"class="nav-link">Historias</a></li>
-                        <li class="nav-item"><a href="#"class="nav-link">Loja</a></li>
-                        <li class="nav-item"><a href="#"class="nav-link">Contato</a></li>
-                    </ul>
-                </nav>
             </div>
-            
-            
-            
-            
-            <script src="https://kit.fontawesome.com/60c66328b2.js" crossorigin="anonymous"></script>
-            
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        
-        <script src="../scripts/script.js"></script>
-    </body>
-    </html>
+
+            <div id="social">
+                <ul id="list-social">
+                    <li class="social-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="social-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li class="social-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="social-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="social-item"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="span">
+                <span id="phone">+55 21 99730-0601</span>
+                <span id="direitos">Todos os direitos reservados © 2021</span>
+            </div>
+    </section>
+
+
+    <footer>
+
+        <div id="footer">
+            <a id="clientes" href="#mapa" data-toggle="collapse">Clientes ></a>
+            <div id="mapa" class="collapse">
+                <div class="quadrado-faq bg-info">Imagem</div>
+                <div class="quadrado-faq bg-dark">Imagem</div>
+                <div class="quadrado-faq bg-success">Imagem</div>
+                <div class="quadrado-faq bg-danger">Imagem</div>
+            </div>
+
+            <div id='line-footer' class="mt-3"></div>
+            <a href="#" id="dev">Desenvolvedor: Iago Nascimento</a>
+        </div>
+
+    </footer>
+    <div id="layer">
+        <nav class="navbar">
+
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="./sobre.html" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Portifólio</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Serviços</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Viagens</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Historias</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Loja</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+
+    <script src="https://kit.fontawesome.com/60c66328b2.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>

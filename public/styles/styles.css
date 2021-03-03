@@ -1,26 +1,29 @@
 body{
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
+    display:grid;
+    grid-template-columns: 30% 60% 20%; 
+    grid-template-rows: 20% 60% 20%;
 }
-.header{
+header{
+    grid-column-start:1;
+    grid-column-end:4 ;
+    width: 100vw;
     display: flex;
-    width: 100%;
+    flex-direction: row;
     justify-content: space-between;
     background-color:slategrey;
-    height: 120px;
     overflow: visible;
+
 }
-.btnNav{
-    width: 30%;
-    width: 25px;
-    height: 25px;
+.position-btn{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 250px;
 }
 .btn-navOpen,.btn-navClosed{
     font-size: 50px;
-    position: absolute;
-    display: flex;
-    top: 30px;
-    left: 50px;
     transform-style:preserve-3d;
     backface-visibility: hidden;
     transition: transform 1s;
@@ -29,33 +32,32 @@ body{
     transform: rotateY(540deg);
 }
 .logo{
-    margin-left: 200px;
-    width: 240px;
-    height: 120px;
+    width: 200px;
     background-color: darkblue;
-    color:white
+    color:white;
+    flex-shrink: 1;
 }
 .divLink{
-    font-size: 14px;
-    float: right;
-    margin-top: 80px;
-    margin-right: 30px;
+    width: 250px;
+    margin-right: 20px;
+    align-self: flex-end;
 }
 .linkHeader{
-    font-size: 14px;
     float: right;
-    margin-left: 5px;
+    font-size: 14px;
+    margin-right: 5px;
+    margin-bottom: 10px;
     text-decoration: none;
-    color:azure;
+    color:black;
 }
 .linkHeader:hover{
     text-decoration: none;
-    color: yellowgreen;
+    color: white;
 }
 #layer{
     position: absolute;
     width: 100%;
-    height: 140%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
     color: whitesmoke;
     font-size: 40px;
@@ -65,14 +67,25 @@ body{
     flex-direction: column;
     top: 0;
 }
+
+
+
+
+
+
+section{
+    grid-column-start:1;
+    grid-column-end:4;
+    background-color: violet;
+
+    display: flex;
+    flex-direction: row;  
+}
 @keyframes moveTitle{
     0%{top:500px;}
     100%{top:100px;}
-
 }
 #title-div{
-    float: left;
-    position: relative;
     overflow: hidden;
 }
 #title-h1{
@@ -102,14 +115,12 @@ body{
 }
 @keyframes moveCarroussel{
     0%{left:1200px;}
-    100%{left:80px;}
+    100%{left:80px;} 
 }
 #meuCarroussel{ 
-    float: left;
-    top: 50px;
-    left: 50px;
 
-    position: relative;
+    margin-top: 40px;
+
     animation-name:moveCarroussel;
     animation-duration: 1.2s;
     animation-fill-mode: forwards;
@@ -120,29 +131,9 @@ body{
     width: 1000px;
     height: 500px;
 }
-.span{
-    position: relative;
-    justify-content: center;
-}
-#phone{
-    display: inline;
-    font-size: 13px;
-}
-#phone:hover{
-    font-weight: bold;
-}
-#direitos{
-    margin-left: 700px;
-    display: inline;
-    font-size: 12px;
-}
 #social{
-    float: right;
-    margin-top: 100px;
-    margin-right: 60px;
     font-size: 30px;
     overflow: hidden;
-    
 }
 #list-social{
     text-decoration: none;
@@ -154,8 +145,7 @@ body{
     
 }
 .social-item{
-    margin-top: 25px;
-    
+
     position: relative;
     animation-name: moveSocialItem;
     animation-duration: 1.2s;
@@ -164,12 +154,29 @@ body{
     
 }
 i{
+    display: flex;
+
     color: black;
 }
+#phone{
+    display: inline;
+    font-size: 13px;
+}
+#phone:hover{
+    font-weight: bold;
+}
+#direitos{
+/*     display: inline; */
+    font-size: 12px;
+}
 .span{
-    display: inline-block;
-    top: 50px;
-    left: 350px;
+
+}
+footer{
+    grid-column-start:1;
+    grid-column-end:4;
+    background-color:blue;
+
 }
 #footer{
     float: left;

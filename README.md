@@ -1,9 +1,32 @@
-<h1>Site de Portifolio para fotografos</h1>
-<br>
-<h1>Sobre:<h1><br>
+<h1>
+<img src="https://ik.imagekit.io/0sy1ipa4olx/mavic-2-enterprise_bTNUtJT0QB.jpg">
+</h1>
 
-No reader do nosso site temos um botão para abrir a paginação que vai ser mostrada por cima da pagina home, depois vem a logo do fotografo e em seguinda 3 links dentro de uma div com links para o idioma do site e enviar um email para o fotógrafo.
+## 📄 Sobre
+Um site de portifólio para um aventureiro e seu *Mavic*.
 
-no copo do site vem uma section com o nome e descrição do fotografo e ao lado um carrossel de imagens feito com bootstrap e ao lado links para sua social midia. 
+---
 
-No footer temos um acordion feito com bootstrap afim de exibir alguns cliente mas pode ser utilizado para outra informação
+## 🚀 Tecnologias envolvidas
+
+O projeto foi desenvolvido utilizando as seguintes tecnologias:
+
+ - [Node](https://nodejs.org/pt-br/)
+ ---
+##  📁 Como baixar o projeto
+
+```bash
+
+    #Clonar repositorio
+    $ git clone https://github.com/IagoNascimentocode/Site-Portifolio
+
+    #Entrar no diretório    
+    $ cd Site-Portifolio
+
+    #Instalar dependencias
+    $ npm install 
+
+    #Iniciar Projeto
+    
+
+```
