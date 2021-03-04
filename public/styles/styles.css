@@ -2,8 +2,10 @@ body{
     margin:0;
     padding:0;
     display:grid;
-    grid-template-columns: 30% 60% 20%; 
+    grid-template-columns: 30% 60% 10%; 
     grid-template-rows: 20% 60% 20%;
+    row-gap: 50px;
+    background-color: coral;
 }
 header{
     grid-column-start:1;
@@ -75,63 +77,59 @@ header{
 
 section{
     grid-column-start:1;
-    grid-column-end:4;
-    background-color: violet;
-
-    display: flex;
-    flex-direction: row;  
+    grid-column-end:2;
 }
 @keyframes moveTitle{
     0%{top:500px;}
-    100%{top:100px;}
+    100%{top:50px;}
 }
 #title-div{
     overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
 #title-h1{
-    width: 300px;
-    height: 120px;
-    margin: 0;
-    padding: 0;
-    left: 50px;
-    top: 100px;
-    
+    left: 60px;
+    font-size: 50px;
     position: relative;
     animation-name: moveTitle;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
 }
 #title-p{
-    width: 300px;
-    height: 150px;
-    left: 50px;
-    top: 200px;
+    left: 60px;
+    font-size: 25;
     overflow: hidden;
-    
     position: relative;
     animation-name: moveTitle;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
+main{
+    grid-column-start:2;
+    grid-column-end:3;
+
+    display: flex;
+    flex-direction: row;
+}
 @keyframes moveCarroussel{
-    0%{left:1200px;}
-    100%{left:80px;} 
+    0%{left:2000px;}
+    100%{left:0px;} 
 }
 #meuCarroussel{ 
-
-    margin-top: 40px;
 
     animation-name:moveCarroussel;
     animation-duration: 1.2s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
-        
+    
 }
 .bloco-corousel-item{
-    width: 1000px;
-    height: 500px;
+    width: 60vw;
+    height: 60vh;
 }
 #social{
+    margin-top: 40px;
     font-size: 30px;
     overflow: hidden;
 }
@@ -140,33 +138,34 @@ section{
     list-style: none;
 }
 @keyframes moveSocialItem{
-    0%{right: 1200px;}
+    0%{right: 500px;}
     100%{right:0px;}
     
 }
+aside{
+    grid-column-start:3;
+    grid-column-end:4;
+}
 .social-item{
-
+    padding-bottom: 10px;
     position: relative;
     animation-name: moveSocialItem;
-    animation-duration: 1.2s;
+    animation-duration: 1.5s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     
 }
 i{
     display: flex;
-
     color: black;
 }
 #phone{
-    display: inline;
     font-size: 13px;
 }
 #phone:hover{
     font-weight: bold;
 }
 #direitos{
-/*     display: inline; */
     font-size: 12px;
 }
 .span{
@@ -175,8 +174,6 @@ i{
 footer{
     grid-column-start:1;
     grid-column-end:4;
-    background-color:blue;
-
 }
 #footer{
     float: left;
